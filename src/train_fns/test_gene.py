@@ -81,9 +81,7 @@ def test_gene(cfg, chr):
 
 
 if __name__ == '__main__':
-    setup_logging()
-
-    model_dir = '..data/'
+    model_dir = '/home/kevindsouza/Documents/projects/Epi-LSTM/data'
     config_base = 'config.yaml'
     result_base = 'images'
     chr = '21'
