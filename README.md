@@ -25,7 +25,7 @@ To test an existing model, run the ```test_gene.py``` function with the chromoso
 The stored representations can be used for downstream classification of genomic phenomena like Gene Expression, Promoter-Enhancer Interactions, Frequently Interacting Regions and Replication Timing. The data for these can be obtained from resources pointed to in the ```Methods-Datasets``` section of the manuscript. To start the downstream classification tasks, run ```run_downstream.py``` with the chromosome and trained model as input. Classification is carried out using the XGBoost frameowrk, details of which can be found in the ```Methods-Downstream Classification``` section in the manuscript. 
 
 ## Plotting 
-Most of the plotting can be done in ```plot_map.py```. The results are pre-stored, they can be loaded and visualized. 
+Most of the plotting can be done in ```eda/plot_map.py```. The results are pre-stored, they can be loaded and visualized. 
 
 
 
