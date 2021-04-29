@@ -13,6 +13,12 @@ initial hidden state and tries to recreate the original sequence. The epigenomic
 
 The model can be found in the ```src/model.py``` file. The model maninly consists of two parts, encoder which can be found in ```encoder.py``` and the decoder, which can be found in ```decoder.py```. The encoders and decoders can be replaced/manipulated using these files. 
 
+### Encoder 
+![Encoder](https://github.com/kevinbdsouza/Epi-LSTM//blob/main/data/encoder.png?raw=true)
+
+### Decoder 
+![Decoder](https://github.com/kevinbdsouza/Epi-LSTM//blob/main/data/decoder.png?raw=true)
+
 ## Training Epi-LSTM 
 The training fuctions are in the ```src/train_fns``` folder. To train a new model with all the epigenomic data, run the ```train_gene.py``` function. 
 
