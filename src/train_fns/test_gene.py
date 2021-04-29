@@ -36,8 +36,8 @@ def get_config(model_dir, config_base, result_base):
     return cfg
 
 
-def test_gene(cfg):
-    data_ob_gene = DataPrepGene(cfg, mode='test')
+def test_gene(cfg, chr):
+    data_ob_gene = DataPrepGene(cfg, mode='test', chr=chr)
     monitor = MonitorTesting(cfg)
     callback = TensorBoard(cfg.tensorboard_log_path)
     vizOb = Viz(cfg)
@@ -86,7 +86,7 @@ if __name__ == '__main__':
     model_dir = '..data/'
     config_base = 'config.yaml'
     result_base = 'images'
-
+    chr = '21'
     cfg = get_config(model_dir, config_base, result_base)
 
-    test_gene(cfg)
+    test_gene(cfg, chr)
