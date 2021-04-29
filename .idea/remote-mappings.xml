@@ -10,6 +10,13 @@
             </list>
           </settings>
         </remote-mappings>
+        <remote-mappings server-id="python@sftp://kevindsouza@137.82.57.119:22/usr/bin/python3.6">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/home/kevindsouza/Documents/projects/Epi-LSTM" />
+            </list>
+          </settings>
+        </remote-mappings>
       </list>
     </list>
   </component>
