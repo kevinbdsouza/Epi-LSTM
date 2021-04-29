@@ -1,0 +1,57 @@
+base_pair_resolution: 25
+cell_assay_embed_size: 24
+chr_cuts:
+  '20': 7
+  '21': 5
+chr_len:
+  '20': 2518700
+  '21': 1926400
+config_base: config.yaml
+config_file: /home/kevindsouza/Documents/projects/latentGenome/src/saved_model/model_all_ca/config.yaml
+cut_seq_len: 100
+data_dir: .data/
+downstream_df_columns:
+- f1
+- f2
+- f3
+- f4
+- f5
+- f6
+- f7
+- f8
+- f9
+- f10
+- f11
+- f12
+- f13
+- f14
+- f15
+- f16
+- f17
+- f18
+- f19
+- f20
+- f21
+- f22
+- f23
+- f24
+- target
+- gene_id
+epigenome_bigwig_path: /opt/data/latent/data/bigwig
+epigenome_npz_path_test: /data2/latent/data/npz/chr21_arc_sinh_znorm
+epigenome_npz_path_train: /data2/latent/data/npz/chr21_arc_sinh_znorm
+fasta_path: /opt/data/latent/data/dna
+hidden_size_decoder: 24
+hidden_size_encoder: 24
+input_size_decoder: 24
+input_size_encoder: 1030
+learning_rate: 0.01
+load_weights: false
+max_norm: 5.0e-14
+model_dir: /home/kevindsouza/Documents/projects/latentGenome/src/saved_model/model_all_ca
+network: lstm
+num_epochs: 3
+output_size_decoder: 1030
+tensorboard_log_base: t_log
+tensorboard_log_path: /home/kevindsouza/Documents/projects/latentGenome/src/saved_model/model_all_ca/t_log
+use_dna_seq: false
