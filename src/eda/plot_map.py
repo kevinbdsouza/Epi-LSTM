@@ -519,15 +519,15 @@ class PlotMap:
         pos = [0, 100, 200, 400, 800, 1600, 3200, 6400, 9000, 10000]
         pos = [i * 25000 for i in pos]
 
-        plt.ylabel('R-squared', fontsize=14)
-        plt.xlabel('Distance between positions (bp)', fontsize=14)
-        plt.yticks(fontsize=14)
-        plt.xticks(fontsize=14)
+        plt.ylabel('R-squared', fontsize=15)
+        plt.xlabel('Distance between positions (bp)', fontsize=15)
+        plt.yticks(fontsize=16)
+        plt.xticks(fontsize=16)
         plt.tick_params(axis='x', which='both', length=0)
         plt.plot(pos, r2_lstm, linestyle='--', marker='o', color='red', label='Epi-LSTM')
         plt.plot(pos, r2_avo, linestyle='--', marker='o', color='blue', label='Avocado')
         plt.plot(pos, r2_refined_cnn, linestyle='--', marker='o', color='brown', label='REFINED+CNN')
-        plt.legend(fontsize=14)
+        plt.legend(fontsize=16)
         plt.show()
         pass
 
