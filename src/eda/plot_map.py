@@ -527,7 +527,7 @@ class PlotMap:
         plt.plot(pos, r2_lstm, linestyle='--', marker='o', color='red', label='Epi-LSTM')
         plt.plot(pos, r2_avo, linestyle='--', marker='o', color='blue', label='Avocado')
         plt.plot(pos, r2_refined_cnn, linestyle='--', marker='o', color='brown', label='REFINED+CNN')
-        plt.legend(fontsize=14, )
+        plt.legend(fontsize=14)
         plt.show()
         pass
 
@@ -653,7 +653,7 @@ if __name__ == "__main__":
     cfg = get_config(model_path, config_base, result_base)
     plot_ob = PlotMap(cfg)
 
-    plot_ob.plot_gene()
+    #plot_ob.plot_gene()
     #plot_ob.plot_all()
 
     #hidden_list = [6, 12, 24, 36, 48, 60, 96, 110]
@@ -672,7 +672,7 @@ if __name__ == "__main__":
     #plot_ob.plot_hyper_xgb()
 
     #plot_ob.plot_gene_regression()
-    #plot_ob.plot_smoothness()
+    plot_ob.plot_smoothness()
     # plot_ob.plot_correlations()
 
     # plot_ob.plot_pr_roc()
