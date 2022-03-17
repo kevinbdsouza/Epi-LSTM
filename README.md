@@ -1,6 +1,15 @@
 # Epi-LSTM
 Latent representation of the human pan-celltype epigenome through a deep recurrent neural network
 
+<p align="center">
+    <a href="https://ieeexplore.ieee.org/document/9442933">
+        <img alt="Paper" width="80" height="40" src="https://github.com/kevinbdsouza/Hi-C-LSTM//blob/main/data2/penguin.svg?raw=true">
+    </a>
+    <a href="https://github.com/kevinbdsouza/Epi-LSTM/releases/tag/v1.0.0">
+        <img alt="Release" width="80" height="40" src="https://github.com/kevinbdsouza/Hi-C-LSTM//blob/main/data2/crow.svg?raw=true">
+    </a>
+</p>
+
 ## Data Preparation
 Download the epigenomic data pertaining to histone modifications and chromatin accessibility (ChIP-seq and DNase-seq) from the [Roadmap Epigenomics Consortium](http://www.roadmapepigenomics.org/). Use the arcsinh transformation on the signal to stabilize the variance of these signals and lessen the effect of outliers. The downloaded data consists of different Assays performed in various Cell Types. 
 
